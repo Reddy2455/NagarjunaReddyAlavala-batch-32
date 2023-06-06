@@ -2,36 +2,26 @@
     <head>
         <title>creating hobbies using function</title>
         <script>
-let hobbies = ["Reading", "Painting", "Playing"];
+         var hobbies=['reading','playing','drawing'];
+          function myHobbies(){
+        
+            return myHobbies;  
+          }
+          console.log(myHobbies);
 
-
-function getAllHobbies() {
-  return hobbies;
+         
+          var hobbies = [];
+function myHobbies(){
+    for(var i=0;i<myHobbies.length;i++){
+      myHobbies.push('painting');
+    }
+    Items('reading','playing','drawing');
 }
-
-
-function addHobby(newHobby) {
-  hobbies.push(newHobby);
-}
-
-
-function deleteHobby(hobbyToDelete) {
-  const index = hobbies.indexOf(hobbyToDelete);
-  if (index > -1) {
-    hobbies.splice(index, 1);
-  }
-}
-
-
-console.log(getAllHobbies());
-
-addHobby("Photography");
-console.log(getAllHobbies()); 
-
-deleteHobby("Painting");
-console.log(getAllHobbies()); 
-
-
+          
+         
+          console.log(myHobbies);
+         
+         
 
         </script>
     </head>
