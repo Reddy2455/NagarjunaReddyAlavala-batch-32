@@ -14,28 +14,19 @@
 </br>
 <input type="text" id="emailId" placeholder="email" required/>
 </br>
-<input type="submit" value="Submit">
+<button type="button" onclick="displayInfo()">Submit</button>
 
         </form>
     </body>
     <script>
-        var el = document.getElementById('form');
-        if (el) {
-      el.addEventListener('submit',function(event)
-        
-        {
-            event.preventDefault()
-            var firstname = document.getElementById('firstname').value
-            console.log(firstname)
-            var lastname = document.getElementById('lastname').value
-            console.log(lastname)
-            var phoneNumber = document.getElementById('phn').value
-            console.log(phoneNumber)
-            var dob = document.getElementById('dob').value 
-            console.log(dob)
-            var emailId= document.getElementById('emailId').value
-            console.log(emailId)
-        });
-        }
+    function displayInfo(){
+        console.log(document.getElementById("firstname").value);
+        console.log(document.getElementById("lastname").value);
+        console.log(document.getElementById("phn").value);
+        console.log(document.getElementById("dob").value);
+        console.log(document.getElementById("emailId").value);
+
+
+    }
     </script>
 </html>

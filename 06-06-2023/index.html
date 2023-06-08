@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Profile Information Form</title>
+</head>
+<body>
+    <h2>Profile Information</h2>
+    <form id="profile">
+        <div id="form">
+            
+            <input type="text" id="firstName" name="firstName" placeholder="FirstName" required>
+        </div>
+        <div id="form">
+           
+            <input type="text" id="lastName" name="lastName" placeholder="LastName" required>
+        </div>
+        <div id="form">
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male" required>Male
+          
+            <input type="radio" id="female" name="gender" value="female" required>Female
+           
+            <input type="radio" id="other" name="gender" value="other" required>Others
+        </div>
+        <div id="form">
+           
+            <input type="email" id="email" name="email" placeholder="email" required>
+        </div>
+        <div id="form">
+            
+            <input type="tel" id="phone" name="phone" palceholder="Ph.No" required>
+        </div>
+        <div id="form">
+            <p>Hobbies:</p><br>
+            <input type="checkbox" id="hobby1" name="hobbies" value="Playing">
+            <label id="hobby1">Playing</label>
+            <input type="checkbox" id="hobby2" name="hobbies" value="Reading">
+            <label id="hobby2">Reading</label>
+            <input type="checkbox" id="hobby3" name="hobbies" value="sports">
+            <label id="hobby3">Sports</label>
+        </div>
+        <div id="form">
+            <label id="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div id="form">
+            <button type="button" onclick="displaySubmittedInfo()">Submit</button>
+        </div>
+    </form>
+<div id="submittedInfo">
+
+</div>
+
+    <script>
+        function displaySubmittedInfo() {
+            var information = document.getElementById("profile");
+            var submittedInfo = document.getElementById("submittedInfo");
+        
+
+            const firstName = information.elements.firstName.value;
+            const lastName = information.elements.lastName.value;
+            const gender = information.elements.gender.value;
+            const email = information.elements.email.value;
+            const phone = information.elements.phone.value;
+            const hobbies = [];
+const hobbyInputs = form.elements.hobbies;
+
+for (var i = 0; i < hobbyInputs.length; i++) {
+  if (hobbyInputs[i].checked) {
+    hobbies.push(hobbyInputs[i].value);
+  }
+}
+
+            const dob = form.elements.dob.value;
+
+            submittedInfo.innerHTML += "<p><strong>First Name:</strong> " + firstName + "</p>";
+submittedInfo.innerHTML += "<p><strong>Last Name:</strong> " + lastName + "</p>";
+submittedInfo.innerHTML += "<p><strong>Gender:</strong> " + gender + "</p>";
+submittedInfo.innerHTML += "<p><strong>Email:</strong> " + email + "</p>";
+submittedInfo.innerHTML += "<p><strong>Phone Number:</strong> " + phone + "</p>";
+submittedInfo.innerHTML += "<p><strong>Hobbies:</strong> " + hobbies.join(", ") + "</p>";
+submittedInfo.innerHTML += "<p><strong>Date of Birth:</strong> " + dob + "</p>";
+              }
+              </script>
+              </body>
+              </html>
+
+ 
+  </script>
+</body>
+</html>
