@@ -65,13 +65,13 @@
 
             const dob = information.elements.dob.value;
 
-            submittedInfo.innerHTML = "<p><strong>First Name:</strong> " + firstName + "</p>";
-            submittedInfo.innerHTML +=   lastName 
-            submittedInfo.innerHTML += "<p><strong>Gender:</strong> " + gender + "</p>";
-            submittedInfo.innerHTML += "<p><strong>Email:</strong> " + email + "</p>";
-            submittedInfo.innerHTML += "<p><strong>Phone Number:</strong> " + phone + "</p>";
-            submittedInfo.innerHTML += "<p><strong>Hobbies:</strong> " + hobbies.join(", ") + "</p>";
-            submittedInfo.innerHTML += "<p><strong>Date of Birth:</strong> " + dob + "</p>";
+            submittedInfo.innerHTML =   firstName;
+            submittedInfo.innerHTML +=   lastName;
+            submittedInfo.innerHTML +=   gender;
+            submittedInfo.innerHTML +=  email;
+            submittedInfo.innerHTML +=  phone;
+            submittedInfo.innerHTML +=  hobbies.join(", ");
+            submittedInfo.innerHTML += dob ;
         }
     </script>
 </body>
