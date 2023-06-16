@@ -1,0 +1,14 @@
+<nav class ="nav">
+    <div class = "nav-search">
+        <input type="text" placeholder="Search Name"/>
+        <button> Search </button>
+    </div>
+    <ul>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><button (click)="toggleLogin()">
+            {{isLoggedIn? 'Logout': 'Login'}}
+        </button></li>
+        <li><a href="#">Demo</a></li>
+    </ul>
+  </nav>
